@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/colorGrayLight"
+            android:orientation="vertical"
+            tools:context=".CastCrewFullInfoActivity">
+
+
+            <ImageView
+                android:id="@+id/person_image"
+                android:layout_width="match_parent"
+                android:layout_height="500dp"
+                android:scaleType="fitXY" />
+
+            <Button
+                android:id="@+id/button_imdb"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorAccent"
+                android:onClick="imdb"
+                android:text="Visit IMDB Page"
+                android:textColor="#ffffff"
+                android:textSize="17dp" />
+
+            <TextView
+                android:id="@+id/person_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="8dp"
+                android:text="NAME"
+                android:textColor="#ffffff"
+                android:textSize="27dp" />
+
+            <TextView
+                android:id="@+id/person_gender"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="8dp"
+                android:text="GENDER"
+                android:textColor="#ffffff"
+                android:textSize="17dp" />
+
+            <TextView
+                android:id="@+id/person_birthday"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="8dp"
+                android:text="BIRTHDAY"
+                android:textColor="#ffffff"
+                android:textSize="17dp" />
+
+            <TextView
+                android:id="@+id/person_age"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="8dp"
+                android:text="AGE"
+                android:textColor="#ffffff"
+                android:textSize="17dp" />
+
+            <TextView
+                android:id="@+id/person_department"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="8dp"
+                android:text="DEPARTMENT"
+                android:textColor="#ffffff"
+                android:textSize="17dp" />
+
+
+            <TextView
+                android:id="@+id/person_biography"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="8dp"
+                android:text="BIOGRAPHY"
+                android:textColor="#ffffff"
+                android:textSize="17dp" />
+
+
+        </LinearLayout>
+    </ScrollView>
+
+    <com.wang.avi.AVLoadingIndicatorView
+        android:id="@+id/avi"
+        style="@style/AVLoadingIndicatorView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:visibility="invisible"
+        app:indicatorColor="@color/colorAccent"
+        app:indicatorName="BallPulseIndicator" />
+
+</RelativeLayout>
