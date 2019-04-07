@@ -9,14 +9,21 @@
     android:background="#ffffff"
     android:orientation="vertical">
 
+    <include layout="@layout/action_bar"
+        android:id="@+id/bar"
+        android:layout_alignParentTop="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
     <android.support.v7.widget.RecyclerView xmlns:android="http://schemas.android.com/apk/res/android"
         xmlns:app="http://schemas.android.com/apk/res-auto"
         xmlns:tools="http://schemas.android.com/tools"
         android:id="@+id/recyclerView"
+        android:layout_below="@id/bar"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:background="@color/cardview_dark_background"
-        tools:context=".MainActivity"/>
+        tools:context=".activity.MainActivity"/>
 
     <iammert.com.view.scalinglib.ScalingLayout
         android:id="@+id/scalingLayout"

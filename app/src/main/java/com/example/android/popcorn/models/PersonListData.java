@@ -1,4 +1,4 @@
-package com.example.android.popcorn;
+package com.example.android.popcorn.models;
 
 public class PersonListData {
     public String profile_path;

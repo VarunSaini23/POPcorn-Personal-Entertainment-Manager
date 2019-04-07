@@ -1,15 +1,19 @@
 package com.example.android.popcorn;
 
+import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.os.AsyncTask;
+import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
+import android.support.v7.widget.Toolbar;
 import android.util.Log;
 import android.view.View;
-import android.widget.Toast;
 
+import com.example.android.popcorn.adapters.GenreLangRecyclerVIewAdapter;
+import com.example.android.popcorn.models.GenreLandData;
 import com.wang.avi.AVLoadingIndicatorView;
 
 import java.util.ArrayList;
@@ -35,6 +39,12 @@ public class GenreLangActivity extends AppCompatActivity {
             url = "https://api.themoviedb.org/3/genre/movie/list?api_key=7da1ead276c45a0e2abd18144be5ea12&language=en-US";
         }
 
+        Toolbar toolbar = findViewById(R.id.toolbar);
+        setSupportActionBar(toolbar);
+        ActionBar actionbar = getSupportActionBar();
+        actionbar.setDisplayHomeAsUpEnabled(true);
+        actionbar.setHomeAsUpIndicator(R.drawable.menu);
+
 
         recyclerView = findViewById(R.id.genreRecyclerView);
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
@@ -50,6 +60,7 @@ public class GenreLangActivity extends AppCompatActivity {
     }
 
     private class GenreLangAsyncTask extends AsyncTask<String,Void,List<GenreLandData>> {
+        @SuppressLint("WrongThread")
         @Override
         protected List<GenreLandData> doInBackground(String... urls) {
             if(urls.length<1 || urls[0]==null){

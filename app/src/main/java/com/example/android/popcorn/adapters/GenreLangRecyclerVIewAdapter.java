@@ -1,4 +1,4 @@
-package com.example.android.popcorn;
+package com.example.android.popcorn.adapters;
 
 import android.content.res.AssetManager;
 import android.graphics.Typeface;
@@ -8,6 +8,9 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
+
+import com.example.android.popcorn.R;
+import com.example.android.popcorn.models.GenreLandData;
 
 import java.util.ArrayList;
 

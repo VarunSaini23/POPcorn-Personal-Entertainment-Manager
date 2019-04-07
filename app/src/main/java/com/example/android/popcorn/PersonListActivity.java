@@ -10,6 +10,8 @@ import android.util.Log;
 import android.view.View;
 import android.widget.Toast;
 
+import com.example.android.popcorn.adapters.PersonRecyclerVIewAdapter;
+import com.example.android.popcorn.models.PersonListData;
 import com.wang.avi.AVLoadingIndicatorView;
 
 import java.util.ArrayList;

@@ -7,6 +7,11 @@
     android:background="@color/colorGrayDark"
     android:orientation="vertical">
 
+    <include layout="@layout/action_bar"
+        android:layout_alignParentTop="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
     <iammert.com.view.scalinglib.ScalingLayout
         android:id="@+id/scalingLayout"
         android:layout_width="match_parent"
@@ -131,6 +136,12 @@
 
     </RelativeLayout>
     </iammert.com.view.scalinglib.ScalingLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recyclerView1"
+        android:layout_margin= "16dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"></android.support.v7.widget.RecyclerView>
 
     <!--<LinearLayout-->
         <!--android:layout_width="match_parent"-->

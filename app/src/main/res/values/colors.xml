@@ -5,4 +5,10 @@
     <color name="colorAccent">#FF4081</color>
     <color name="colorGrayDark">#121212</color>
     <color name="colorGrayLight">#444444</color>
+    <color name="green_grad_start">#3797a8</color>
+    <color name="green_grad_end">#47ddba</color>
+    <color name="pink_grad_start">#ff3683</color>
+    <color name="pink_grad_end">#ff7685</color>
+    <color name="purple_grad_start">#9158ED</color>
+    <color name="purple_grad_end">#B05FE2</color>
 </resources>

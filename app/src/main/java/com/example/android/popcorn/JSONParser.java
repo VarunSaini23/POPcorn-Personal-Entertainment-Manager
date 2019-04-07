@@ -3,6 +3,8 @@ package com.example.android.popcorn;
 import android.text.TextUtils;
 import android.util.Log;
 
+import com.example.android.popcorn.models.SampleData;
+
 import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;

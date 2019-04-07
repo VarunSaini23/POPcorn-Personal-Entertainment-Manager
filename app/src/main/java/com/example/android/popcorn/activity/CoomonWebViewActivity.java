@@ -1,4 +1,4 @@
-package com.example.android.popcorn;
+package com.example.android.popcorn.activity;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -6,6 +6,8 @@ import android.util.Log;
 import android.webkit.WebSettings;
 import android.webkit.WebView;
 import android.webkit.WebViewClient;
+
+import com.example.android.popcorn.R;
 
 public class CoomonWebViewActivity extends AppCompatActivity {
 

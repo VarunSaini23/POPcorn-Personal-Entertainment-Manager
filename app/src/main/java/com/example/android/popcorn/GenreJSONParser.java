@@ -5,6 +5,12 @@ import android.text.TextUtils;
 import android.util.Log;
 import android.widget.TextView;
 
+import com.example.android.popcorn.models.GenreLandData;
+import com.example.android.popcorn.models.MovieDetailsData;
+import com.example.android.popcorn.models.PersonFullData;
+import com.example.android.popcorn.models.PersonListData;
+import com.example.android.popcorn.models.SampleData;
+
 import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
@@ -19,8 +25,6 @@ import java.net.URL;
 import java.nio.charset.Charset;
 import java.util.ArrayList;
 import java.util.List;
-
-import static com.bumptech.glide.gifdecoder.GifHeaderParser.TAG;
 
 public class GenreJSONParser<T> {
 

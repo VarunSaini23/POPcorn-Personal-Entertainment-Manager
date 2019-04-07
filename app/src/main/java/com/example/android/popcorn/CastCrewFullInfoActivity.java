@@ -5,22 +5,16 @@ import android.os.AsyncTask;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.text.Html;
-import android.text.TextUtils;
 import android.util.Log;
 import android.view.View;
-import android.widget.AdapterView;
-import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
-import android.widget.Toast;
 
 import com.bumptech.glide.Glide;
-import com.google.android.gms.maps.GoogleMap;
-import com.google.android.gms.maps.OnMapReadyCallback;
-import com.google.android.gms.maps.SupportMapFragment;
-import com.google.android.gms.maps.model.LatLng;
-import com.google.android.gms.maps.model.MarkerOptions;
+import com.example.android.popcorn.models.CastCrewData;
+import com.example.android.popcorn.activity.CoomonWebViewActivity;
+import com.example.android.popcorn.models.PersonFullData;
 import com.wang.avi.AVLoadingIndicatorView;
 
 import java.util.ArrayList;
@@ -68,7 +62,7 @@ public class CastCrewFullInfoActivity extends AppCompatActivity{
     }
 
     public void imdb(View view){
-        Intent i = new Intent(CastCrewFullInfoActivity.this,CoomonWebViewActivity.class);
+        Intent i = new Intent(CastCrewFullInfoActivity.this, CoomonWebViewActivity.class);
         i.putExtra("uurrll",person_imdb);
         startActivity(i);
     }

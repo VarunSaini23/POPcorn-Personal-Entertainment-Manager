@@ -4,7 +4,6 @@
     package="com.example.android.popcorn">
 
     <uses-permission android:name="android.permission.INTERNET" />
-
     <!--
          The ACCESS_COARSE/FINE_LOCATION permissions are not required to use
          Google Maps Android API v2, but you must specify either coarse or fine
@@ -19,7 +18,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.AppCompat.Light.NoActionBar">
-        <activity android:name=".MainActivity">
+        <activity android:name=".activity.AboutUsActivity"></activity>
+        <activity android:name=".LoginActivity"></activity>
+        <activity android:name=".activity.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -30,7 +31,7 @@
         <activity android:name=".MovieListActivity" />
         <activity android:name=".GenreLangActivity" />
         <activity android:name=".MovieDetailActivity" />
-        <activity android:name=".CoomonWebViewActivity" />
+        <activity android:name=".activity.CoomonWebViewActivity" />
         <activity android:name=".CastCrewFullInfoActivity" />
         <!--
              The API key for Google Maps-based APIs is defined as a string resource.
@@ -40,8 +41,7 @@
              sign the APK for publishing.
              You can define the keys for the debug and release targets in src/debug/ and src/release/. 
         -->
-
-        <activity android:name=".PersonListActivity"></activity>
+        <activity android:name=".PersonListActivity" />
     </application>
 
 </manifest>

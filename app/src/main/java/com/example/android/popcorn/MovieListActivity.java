@@ -3,8 +3,6 @@ package com.example.android.popcorn;
 import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.os.AsyncTask;
-import android.os.Build;
-import android.support.annotation.RequiresApi;
 import android.support.v4.view.ViewCompat;
 import android.support.v4.view.ViewPropertyAnimatorListener;
 import android.support.v7.app.AppCompatActivity;
@@ -18,6 +16,8 @@ import android.widget.LinearLayout;
 import android.widget.RelativeLayout;
 import android.widget.Toast;
 
+import com.example.android.popcorn.adapters.RecyclerVIewAdapter;
+import com.example.android.popcorn.models.SampleData;
 import com.wang.avi.AVLoadingIndicatorView;
 
 import java.util.ArrayList;
@@ -34,7 +34,6 @@ public class MovieListActivity extends AppCompatActivity {
     ArrayList<SampleData> newList;
     int selected = 1;
     AVLoadingIndicatorView avi;
-
     RelativeLayout sort_date;
     RelativeLayout sort_rate;
     RelativeLayout sort_pop;

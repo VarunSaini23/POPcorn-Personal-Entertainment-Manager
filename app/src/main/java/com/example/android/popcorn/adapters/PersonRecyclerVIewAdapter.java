@@ -1,4 +1,4 @@
-package com.example.android.popcorn;
+package com.example.android.popcorn.adapters;
 
 import android.content.Context;
 import android.content.res.AssetManager;
@@ -12,6 +12,8 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.bumptech.glide.Glide;
+import com.example.android.popcorn.R;
+import com.example.android.popcorn.models.PersonListData;
 
 import java.util.ArrayList;
 

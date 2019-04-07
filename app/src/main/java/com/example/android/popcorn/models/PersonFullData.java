@@ -1,4 +1,4 @@
-package com.example.android.popcorn;
+package com.example.android.popcorn.models;
 
 public class PersonFullData {
     public String pperson_birthday;

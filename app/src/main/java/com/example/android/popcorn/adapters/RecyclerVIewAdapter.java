@@ -1,4 +1,4 @@
-package com.example.android.popcorn;
+package com.example.android.popcorn.adapters;
 
 import android.content.Context;
 import android.content.res.AssetManager;
@@ -13,6 +13,8 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.bumptech.glide.Glide;
+import com.example.android.popcorn.R;
+import com.example.android.popcorn.models.SampleData;
 
 import java.util.ArrayList;
 
@@ -21,7 +23,6 @@ public class RecyclerVIewAdapter extends RecyclerView.Adapter<RecyclerVIewAdapte
     public ArrayList<SampleData> s ;
     AssetManager assetManager;
     Context context;
-
     public RecyclerVIewAdapter(ArrayList<SampleData> s){
         this.s = s;
     }

@@ -2,6 +2,7 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
+
     <item
         android:id="@+id/nav_search"
         android:icon="@drawable/search"
@@ -17,19 +18,25 @@
                     android:id="@+id/nav_genre"
                     android:icon="@drawable/genre"
                     android:title="Genre" />
-                <item
-                    android:id="@+id/nav_slideshow"
-                    android:icon="@drawable/lang"
-                    android:title="Language" />
+                <!--<item-->
+                    <!--android:id="@+id/nav_slideshow"-->
+                    <!--android:icon="@drawable/lang"-->
+                    <!--android:title="Language" />-->
 
             </group>
         </menu>
     </item>
 
+
     <item
-        android:id="@+id/nav_theme"
+        android:id="@+id/nav_logout"
+        android:icon="@drawable/search"
+        android:title="Logout" />
+
+    <item
+        android:id="@+id/nav_aboutus"
         android:icon="@drawable/black_theme"
-        android:title="Dark Theme" />
+        android:title="About Us" />
 
 
 

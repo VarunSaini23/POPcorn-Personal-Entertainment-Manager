@@ -2,7 +2,6 @@ package com.example.android.popcorn;
 
 import android.annotation.SuppressLint;
 import android.content.Intent;
-import android.graphics.Movie;
 import android.graphics.Typeface;
 import android.os.AsyncTask;
 import android.support.v7.app.AppCompatActivity;
@@ -12,7 +11,6 @@ import android.text.Html;
 import android.text.TextUtils;
 import android.util.Log;
 import android.view.View;
-import android.view.ViewGroup;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.ImageView;
@@ -21,6 +19,9 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.bumptech.glide.Glide;
+import com.example.android.popcorn.models.CastCrewData;
+import com.example.android.popcorn.activity.CoomonWebViewActivity;
+import com.example.android.popcorn.models.MovieDetailsData;
 import com.wang.avi.AVLoadingIndicatorView;
 
 import java.util.ArrayList;
@@ -129,7 +130,7 @@ public class MovieDetailActivity extends AppCompatActivity {
         if(TextUtils.isEmpty(movie_homepage) || movie_homepage.equals("null") ){
             Toast.makeText(this, "Sorry , No homepage", Toast.LENGTH_SHORT).show();
         }else{
-        Intent i = new Intent(MovieDetailActivity.this,CoomonWebViewActivity.class);
+        Intent i = new Intent(MovieDetailActivity.this, CoomonWebViewActivity.class);
         i.putExtra("uurrll",movie_homepage);
         startActivity(i);}
     }
